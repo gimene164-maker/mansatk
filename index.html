@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Elite 3 | منصة الثانوية العامة</title>
+<meta name="description" content="منصة Elite 3 تجمع أفضل مدرسي الصف الثالث الثانوي مع نظام امتحانات وترتيب للطلاب" />
+<meta name="theme-color" content="#0E7C4A" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ PUBLIC LANDING SHELL ============ -->
+<div id="publicShell" class="active">
+  <nav class="topnav">
+    <div class="wrap row">
+      <a href="#/" class="brand"><div class="mark"><img src="icons/icon-192.png" alt="Elite 3" /></div> Elite 3</a>
+      <div class="navlinks">
+        <a href="#teachers">المدرسون</a>
+        <a href="#features">المميزات</a>
+        <a href="#pricing">الاشتراك</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" onclick="toggleTheme()"><span class="theme-icon">🌙</span></button>
+        <button class="btn btn-outline btn-sm install-btn" onclick="installApp()">⬇️ تثبيت التطبيق</button>
+        <a href="#/login" class="btn btn-primary btn-sm">تسجيل الدخول</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="bubblefield"></div>
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">🎓 منصة الصف الثالث الثانوي</div>
+        <h1>كل مدرسينك المفضلين في <span>مكان واحد</span></h1>
+        <p class="lead">محاضرات، امتحانات إلكترونية مصححة تلقائيًا، وترتيب لحظي بينك وبين زملائك — في منصة سريعة وآمنة تعمل كتطبيق على هاتفك.</p>
+        <div class="hero-actions">
+          <a href="#/login" class="btn btn-primary">ابدأ الآن</a>
+          <a href="https://wa.me/201108278667" target="_blank" class="btn btn-whatsapp">💬 تواصل عبر واتساب</a>
+          <button class="btn btn-outline install-btn" onclick="installApp()">⬇️ تثبيت التطبيق</button>
+        </div>
+        <div class="hero-stats">
+          <div><b>7</b><span>مدرسين متخصصين</span></div>
+          <div><b>5</b><span>مواد دراسية</span></div>
+          <div><b>350ج</b><span>اشتراك شهري فقط</span></div>
+        </div>
+      </div>
+      <div class="sheet-card">
+        <div class="sheet-head">
+          <b>نموذج امتحان</b>
+          <div class="ring-wrap" style="width:56px;height:56px">
+            <svg width="56" height="56" viewBox="0 0 70 70">
+              <circle cx="35" cy="35" r="30" fill="none" stroke="var(--surface-2)" stroke-width="7"/>
+              <circle cx="35" cy="35" r="30" fill="none" stroke="var(--green-700)" stroke-width="7" stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="34" transform="rotate(-90 35 35)"/>
+            </svg>
+            <div class="val" style="font-size:13px">82%</div>
+          </div>
+        </div>
+        <div class="sheet-row"><div class="qn">1</div><div class="opts">
+          <span class="bubble-dot filled"></span><span class="bubble-dot"></span><span class="bubble-dot"></span><span class="bubble-dot"></span>
+        </div></div>
+        <div class="sheet-row"><div class="qn">2</div><div class="opts">
+          <span class="bubble-dot"></span><span class="bubble-dot filled"></span><span class="bubble-dot"></span><span class="bubble-dot"></span>
+        </div></div>
+        <div class="sheet-row"><div class="qn">3</div><div class="opts">
+          <span class="bubble-dot"></span><span class="bubble-dot"></span><span class="bubble-dot"></span><span class="bubble-dot filled"></span>
+        </div></div>
+        <div class="sheet-row"><div class="qn">4</div><div class="opts">
+          <span class="bubble-dot filled"></span><span class="bubble-dot"></span><span class="bubble-dot"></span><span class="bubble-dot"></span>
+        </div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TEACHERS -->
+  <section id="teachers">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">🧑‍🏫 نخبة المدرسين</div>
+        <h2>تعلّم مع أفضل المتخصصين</h2>
+        <p>مدرسون مختارون بعناية في كل مادة، بأسلوب مبسط يناسب طلاب الثانوية العامة.</p>
+      </div>
+      <div id="teachersGrid" class="grid grid-4"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" style="background:var(--surface-2)">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">⚡ مميزات المنصة</div>
+        <h2>كل ما تحتاجه للتفوق</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card feature-card"><div class="ico">🎬</div><h3>محاضرات مرتبة</h3><p>شاهد محاضرات كل مدرس مرتبة حسب المادة والدرس بضغطة واحدة.</p></div>
+        <div class="card feature-card"><div class="ico">📝</div><h3>تصحيح فوري</h3><p>امتحانات إلكترونية تُصحح تلقائيًا وتظهر نتيجتك لحظة التسليم.</p></div>
+        <div class="card feature-card"><div class="ico">🏆</div><h3>ترتيب حي</h3><p>تابع ترتيبك بين أفضل 20 طالبًا على مستوى المنصة بعد كل امتحان.</p></div>
+        <div class="card feature-card"><div class="ico">📊</div><h3>مقارنات دقيقة</h3><p>قارن درجتك بمتوسط ونتائج زملائك بعد كل امتحان تؤديه.</p></div>
+        <div class="card feature-card"><div class="ico">🔒</div><h3>حساب آمن</h3><p>كل كود يعمل على جهاز واحد فقط لحماية اشتراكك من المشاركة.</p></div>
+        <div class="card feature-card"><div class="ico">📱</div><h3>تطبيق فوري</h3><p>ثبّت المنصة كتطبيق على هاتفك أو جهازك دون الحاجة لمتجر تطبيقات.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="pricing-box">
+        <div class="bubblefield" style="color:#fff;opacity:.08"></div>
+        <div style="position:relative;z-index:2">
+          <div class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff;border-color:transparent">اشتراك شهري واحد لكل المدرسين</div>
+          <div class="price">350<span> جنيه / شهريًا</span></div>
+          <p class="mt-10">اشتراك واحد يفتح لك كل المدرسين، المحاضرات، والامتحانات على المنصة.</p>
+        </div>
+        <div style="position:relative;z-index:2;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://wa.me/201108278667" target="_blank" class="btn btn-whatsapp">💬 اشترك عبر واتساب</a>
+          <a href="#/login" class="btn btn-outline" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.4)">لدي كود بالفعل</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--surface-2)">
+    <div class="wrap" style="max-width:800px">
+      <div class="section-head">
+        <div class="eyebrow">❓ الأسئلة الشائعة</div>
+        <h2>كل ما يدور في بالك</h2>
+      </div>
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>كيف أحصل على كود الدخول؟</span><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>تواصل معنا عبر واتساب لإتمام الاشتراك، وسيتم إرسال كود خاص بك فورًا.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>هل يمكن استخدام نفس الكود على أكثر من جهاز؟</span><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>لا، كل كود يُربط تلقائيًا بأول جهاز يتم تسجيل الدخول منه، ولا يمكن تغييره إلا من خلال الإدارة.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>ماذا يحدث بعد انتهاء الاشتراك؟</span><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>يتوقف الكود تلقائيًا بعد شهر من التفعيل، ويمكنك التجديد بسهولة عبر واتساب.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>هل أحتاج إلى تحميل التطبيق من متجر؟</span><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>لا، يمكنك تثبيت Elite 3 مباشرة من المتصفح على أندرويد وiPhone والكمبيوتر بضغطة زر.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap row">
+      <div class="brand" style="font-size:17px"><div class="mark" style="width:30px;height:30px;font-size:12px"><img src="icons/icon-192.png" alt="Elite 3" /></div> Elite 3</div>
+      <p>© 2026 Elite 3 — جميع الحقوق محفوظة</p>
+      <a href="https://wa.me/201108278667" target="_blank" class="btn btn-whatsapp btn-sm">💬 01108278667</a>
+    </div>
+  </footer>
+</div>
+
+<!-- ============ AUTH SHELL (login / register) ============ -->
+<div id="authShell" class="center-auth">
+  <div id="authContent"></div>
+</div>
+
+<!-- ============ APP SHELL (student / admin) ============ -->
+<div id="appShell" class="app-shell">
+  <aside id="sidebar" class="sidebar"></aside>
+  <main id="mainArea" class="main-area"></main>
+</div>
+
+<!-- ============ MODAL ============ -->
+<div id="modalOverlay" class="modal-overlay" onclick="if(event.target===this) closeModal()">
+  <div class="modal"><div id="modalBody"></div></div>
+</div>
+
+<!-- ============ TOASTS ============ -->
+<div id="toastWrap" class="toast-wrap"></div>
+
+<script src="js/db.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

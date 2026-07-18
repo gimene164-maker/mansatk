@@ -1,0 +1,17 @@
+{
+  "name": "Elite 3 | الثانوية العامة",
+  "short_name": "Elite 3",
+  "description": "منصة Elite 3 لطلاب الصف الثالث الثانوي - محاضرات، امتحانات، وترتيب الطلاب",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B1220",
+  "theme_color": "#0E7C4A",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
